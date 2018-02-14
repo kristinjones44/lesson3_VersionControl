@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INSERT YOUR NAME</title>
+    <title>Kristin Jones</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -67,7 +67,7 @@
         <div class="headline">
             <div class="container">
                 <h2>Lesson 3 Highlights</h2>
-                <h3>INSERT YOUR NAME</h3>
+                <h3>Kristin Jones</h3>
             </div>
         </div>
     </header>
@@ -79,55 +79,60 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="topic1">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/whatisavcs.jpg">
             <h2 class="featurette-heading">Highlight #1
-                <span class="text-muted">Topic 1 Header</span>
+                <span class="text-muted">Version Control Systems</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Version control is a system that tracks edits to a file or set of files over time so that specific versions can be easily accessed later. Graphic and web designers want to keep every version of an image or layout. A Version Control System (VCS) is an important tool that does just that. It allows developers to revert selected files back to a previous state, revert entire projects back to their previous states, compare changes over time, check who last modified a project that might be causing a problem and more. The great thing about using a VCS is if you mess something up or lose files, you can easily recover, making for a responsible, efficient work flow. Many people practice a version control method by copying files to another directory and naming the files a certain way to distinguish the different versions of projects. This works okay but comes with a high risk for error. It is too easy to forget which directory you’re in and accidentally edit the wrong file or copy over files you don’t mean to. To resolve this issue, programmers developed local VCSs that had a simple database that recorded all the changes to files under revision control. The next complication people encounter is that they need to collaborate with developers on other systems. To handle this, Centralized Version Control Systems (CVCSs) were developed. CVCSs have a single server that has all the versioned files that clients can access. CVCSs allow everyone to know what everyone has been doing on a project. Administrators have complete control over who can do what and it’s much more efficient to administer a CVCSs than it is to work with local databases on every client. This setup comes with some downsides, the most blatant being if the centralized server goes down. If the server goes down, no one can collaborate or save their versioned changes to anything they’re working on. This is where Distributed Version Control Systems (DVCSs) come in. In a DVCS like Git, clients don’t just check out the latest snapshot of the files, but fully mirror the repository and its full history. Therefore, if any server dies, these systems were collaborating via that server, any of the client repositories can be copied back p to the server to restore it and every clone is really a backup of all the data from the projects. </p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="topic2">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/git.jpg">
             <h2 class="featurette-heading">Highlight #2
-                <span class="text-muted">Topic 2 Header</span>
+                <span class="text-muted">Git</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">While Git has a similar user interface when compared to other VCSs, Git differs in how it stores and thinks about information. The biggest difference between Git and any other VCS is the way Git thinks about its information. Most other systems store data as a list of file-based changes. Git doesn’t operate this way – instead, Git thinks of its data like a series of snapshots of a file system. Every time you commit, Git essentially takes a snapshot of what all the files look like at that moment and store a reference to the snapshot. Git doesn’t store the files again if they have not changed, just a link to the previous identical file it already stored. Git thinks about data like a stream of snapshots. This is one of the most important distinctions between Git and VCSs, making Git more like a file system combined with some powerful tools. For most operations, Git needs only local files and resources to operate. Git doesn’t need information from another computer on your network to operate. For example, if you want to see the history of a project, Git doesn’t need to access the server to get the history and display it for you. Git reads directly from your local database, meaning you can see the history of a project almost instantly. If you want to see changes from a certain time period, Git can look up a file from that time period and calculate the local difference, instead of having to ask a remote server to do it or pull an older version of the file from the remote server to do it locally. When actions are done in Git, they add data to the Git database. After a snapshot is committed into Git, it is very difficult to lose, especially if you are regularly pushing your database to another repository. Because of this, Git is great to use as it is safe to experiment without the risk of seriously messing things up.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
         <div class="featurette" id="topic3">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/gitcommands.jpg">
             <h2 class="featurette-heading">Highlight #3
-                <span class="text-muted">Topic 3 Header</span>
+                <span class="text-muted">The Three Main States of Git</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">There are three main states Git has that your files can be in: committed, modified and staged. When data is committed, it means that the data is safely stored in your local database. When data is modified, it means that you have changed the file but have not yet committed those changes to your database. Staged means that you have marked a modified file in its current state to go into your next commit snapshot. The Git directory is the place where metadata and object database for your project is stored. This is the most important part of Git and it is what is copied when a repository is cloned from another computer. The working tree is a single checkout of one version of the project. These files are extracted from the compressed database in the Git directory and put on a disk for you to use or modify. The staging area is a file that stores information about what will go into your next commit. The Git workflow operates like this: You modify files in your working tree. You stage just those changes you want to be part of your next commit which adds only those changes to the staging area. You commit those files, which takes the files as they are in the staging area and stores them as a permanent snapshot to the Git directory.</p>
         </div>
         
         <hr class="featurette-divider">
         
        <!-- Fourth Featurette -->
         <div class="featurette" id="topic4">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-left" src="images/github.jpg">
             <h2 class="featurette-heading">Highlight #4
-                <span class="text-muted">Topic 4 Header</span>
+                <span class="text-muted">GitHub Account Set Up and Configuration</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">The first step to using Git is setting up a free user account that can be done at github.com. Once you’re on the site, pick a username, provide your email address and a password and sign up! If you want to use SSH remotes, you will need to donfigure a public key. This can be done by opening your account settings in Git and navigating to the SSH Keys section. In this assignment, we were asked to paste the SSH key from our Cloud9 account into the SSH key option on Github. From my experience, copying and pasting the public key from Cloud9 into Github resulted in a lot of error codes and frustration. Thankfully a classmate pointed out that he too had run into the same problem but that it was resolved when he used the private SSH key from Cloud9 to paste in Github. Github tracks your Git commits by your user email address. It is important to note that if you have multiple email addresses and want GitHub to link them properly, you will need to add all the email addresses you use to the Emails section of the admin panel. For a more secure experience, it is important to set up Two-factor Authentication. Two-factor Authentication is an authentication mechanism that is in place to reduce the risk of your account being compromised. Enabling it will prompt GitHub to ask you for two different methods of authentication so if one of them is compromised, the attacker will be unable to access your account.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Fifth Featurette -->
         <div class="featurette" id="topic5">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="images/gitconsole.jpg">
             <h2 class="featurette-heading">Highlight #5
-                <span class="text-muted">Topic 5 Header</span>
+                <span class="text-muted">Common Git Commands</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead"><b>git init:</b> This commands makes a directory into an empty Git repository. This is the first step in creating a repository. After git init, adding and committing is possible.</p>
+        <p><b>git add:</b> This command adds files to the staging area. The file needs to be added to the staging area before the file is available to commit to the repository. Git add can be used in a few different ways, by adding whole directories, only some files or all unstaged files.</p>
+        <p><b>git commit:</b> This command records the changes made to the files in a local repository. Each commit has a unique ID. It’s best to include a message with each commit that explains the changes made in a commit. Adding a commit message will help to find a specific change or understanding the changes.</p>
+        <p><b>git status:</b> This command returns the current state of the repository. It sill return the current working branch. If a file is in the staging area but not yet committed, it shows with git status. If there are no changes, you will be shown a message that there is nothing to commit, working directory clean.</p>
+        <p><b>git config:</b> Many configurations and settings are possible with Git. Git config is how to set up these settings. Important settings are user user.name and user.email. These set what email addresses and name commits will be from on a local computer. </p>
+        <p><b>git push:</b> This command sends local commits to the remote repository and requires the remote repository and the branch the push is intended for.</p>
         </div>
 
         <hr class="featurette-divider">
